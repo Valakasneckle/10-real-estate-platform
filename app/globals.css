@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  --font-inter: "Inter", system-ui, sans-serif;
+  --font-playfair: "Playfair Display", Georgia, serif;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-playfair);
+  --color-estate-gold: #c9a227;
+  --color-estate-beige: #f5f0e8;
+  --color-estate-navy: #1a2b3c;
+  --color-estate-blue: #4a6fa5;
+  --color-estate-charcoal: #1c1c1c;
+  --color-estate-cream: #faf8f5;
+  --color-estate-warm: #e8e2d9;
+}
+
+body {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  background: #faf8f5;
+  color: #1c1c1c;
+}
+
+::selection {
+  background: rgba(201, 162, 39, 0.25);
+}
+
+.font-display {
+  font-family: var(--font-playfair), Georgia, serif;
+}
